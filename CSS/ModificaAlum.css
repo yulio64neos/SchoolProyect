@@ -1,0 +1,93 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+input[type=text] {
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+select {
+    background: #0563af;
+    color:#fff;
+    padding: 10px;
+    width: 250px;
+    height:50px;
+    border:none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .5);
+    -webkit-appearance:button;
+}
+
+select:before {
+    content: '\f13a';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: #007ce0;
+}
+
+select:hover:before {
+    background: #0472ca;
+}
+
+
+input[type=text]:focus {
+    border-color:dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+
+.Cali {
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+span {
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+}
+
+
